@@ -6,7 +6,7 @@ import Spinner from "../components/Spinner";
 import "../styles/Loginpage.css";
 const Login = () => {
   const img =
-    "https://images.unsplash.com/photo-1593538312308-d4c29d8dc7f1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80";
+    "https://gumlet.assettype.com/bloombergquint/2023-01/3afee10e-185d-4261-9034-0528a49d0d7b/500_rupee_Indian_bank_note_arranged_for_photograph___Photo_Vijay_Sartape_BQ_Prime_.jpeg?w=1200&h=675";
   const [loading, setLoading] = useState(false);
   const navigate = useNavigate();
   //from submit
@@ -38,7 +38,8 @@ const Login = () => {
       <div className="login-page ">
         {loading && <Spinner />}
         <div className="row container">
-          <h1>Expsanse Managment System - MERN STACK</h1>
+          <h1 className="heading">Expense Management System - MERN Stack</h1>
+
           <div className="col-md-6">
             <img src={img} alt="login-img" width={"100%"} height="100%" />
           </div>
